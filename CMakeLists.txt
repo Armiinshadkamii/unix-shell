@@ -3,4 +3,8 @@ project(unix_shell C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(unix_shell main.c)
+add_executable(unix_shell main.c
+        ushell/core.h
+        ushell/core.c
+        ushell/parser.h
+        ushell/parser.c)
